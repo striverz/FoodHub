@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Cart from "./components/Cart/Cart";
 import Body from "./components/Body/Body";
+import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
 
 const App=()=>{
     return(
@@ -41,6 +42,11 @@ const appRouter=createBrowserRouter([
             {
                 path:"/cart",
                 element:<Cart/>
+            },
+            { 
+                path:"/restaurant/:resId",
+                element:<RestaurantMenu/>
+
             }
         ]
     }

@@ -3,6 +3,7 @@ import "./Body.css"
 import {useState,useEffect} from "react";
 import { RESTAURANT_API } from '../../utils/consts';
 import RestaurantCard from '../RestaurantCard/RestaurantCard';
+import { Link } from 'react-router-dom';
 
 
 const Body = () => {
@@ -66,7 +67,10 @@ const Body = () => {
             {
                 filteredRestaurants.map((restaurant)=>{
                     return(
-                        <RestaurantCard card={restaurant.info} key={restaurant?.info?.id}/>
+                        <Link to={"restaurant/"+restaurant?.info?.id} key={restaurant?.info?.id} className="restaurant-menu-loader">
+                         <RestaurantCard card={restaurant.info}/>
+                        </Link>
+                       
                     )
                 })
             }

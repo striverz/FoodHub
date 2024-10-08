@@ -7,7 +7,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 const RestaurantCard = ({ card }) => {
-    console.log(card);
+   
   const { name, cloudinaryImageId, cuisines, avgRating, costForTwo,sla} = card;
 
   return (
