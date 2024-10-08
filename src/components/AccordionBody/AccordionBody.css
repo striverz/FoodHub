@@ -1,0 +1,66 @@
+.accordion-body {
+    border: none; /* Clean, no solid borders */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Spacious padding for a modern look */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners for a polished look */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    margin-bottom: 15px; /* Adds space between accordion items */
+}
+
+.accordion-body:hover {
+    background-color: #f1f1f1; /* Light gray on hover for interactivity */
+}
+
+.accordion-body-left {
+    width: 60%; /* Flexibility to resize based on content */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Clean and modern font size */
+    line-height: 1.6; /* Better readability */
+    color: #333; /* Dark text for contrast */
+}
+
+.accordion-body-left h1 {
+    font-size: 20px; /* Larger for the title */
+    margin-bottom: 10px;
+    color: #111; /* Darker for better hierarchy */
+}
+
+.accordion-body-left p {
+    font-size: 14px; /* Slightly smaller for descriptions */
+    color: #555; /* Softer color for descriptions */
+}
+
+.accordion-body-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center image and button */
+    padding-left: 10px;
+}
+
+.accordion-body-right img {
+    width: 200px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px; /* Match overall rounded style */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 10px; /* Space between image and button */
+}
+
+.accordion-body-right button {
+    background-color: #ff5722; /* Swiggy-inspired vibrant button color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px; /* Slightly rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.accordion-body-right button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
