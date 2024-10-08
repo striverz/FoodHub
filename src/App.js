@@ -1,14 +1,20 @@
-import react from "react";
+import React from "react";
 import reactDom from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 
 //components
 import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Cart from "./components/Cart/Cart";
+import Body from "./components/Body/Body";
 
 const App=()=>{
     return(
         <>
         <Navbar/>
+        <Outlet/>
+       
         </>
     )
 }
@@ -16,8 +22,29 @@ const App=()=>{
 const appRouter=createBrowserRouter([
     {
         path:"/",
-        element: <App/>
+        element: <App/>,
+
+        children:[
+            {
+                path:"/",
+                element:<Body/>
+
+            },
+            {
+                path:"/about",
+                element:<About/>
+            },
+            {
+                path:"/contact",
+                element:<Contact/>
+            },
+            {
+                path:"/cart",
+                element:<Cart/>
+            }
+        ]
     }
+    
 ])
 
 const root=reactDom.createRoot(document.getElementById("root"));
