@@ -1,0 +1,13 @@
+/* Applying the global css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, Helvetica, sans-serif; 
+}
+
+:root{
+
+    --orange-color:#f37021;
+    --green-color:#11c714; 
+}
