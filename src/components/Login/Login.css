@@ -1,0 +1,77 @@
+.login-cmp {
+    margin-top: 150px !important;
+    border: solid 1px #ccc; /* Changed to a lighter gray for a softer look */
+    border-radius: 10px; /* Slightly increased border-radius for a softer edge */
+    padding: 30px; /* Increased padding for more space */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    
+}
+
+.login-cmp h1 {
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    color: #333;
+    font-size: 24px; /* Larger font size for better visibility */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form input {
+    padding: 12px; /* Increased padding for comfort */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.login-form input:focus {
+    border-color: #007BFF; /* Primary color focus */
+    outline: none;
+}
+
+.log {
+    padding: 12px; /* Slightly increased padding for a button */
+    background-color: #FFA500; /* Orange color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Softer edges */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for background and scaling */
+    text-align: center;
+    text-decoration: none;
+}
+
+.login-form .log:hover {
+    background-color: rgb(24, 205, 8); /* Change to a vibrant green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .login-cmp {
+        margin-top: 50px;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .login-form input {
+        font-size: 14px;
+    }
+
+    .log {
+        font-size: 14px; /* Adjust button font size for mobile */
+    }
+}

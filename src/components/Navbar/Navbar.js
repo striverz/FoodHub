@@ -26,10 +26,11 @@ const Navbar=()=>{
                 </div>
 
                 <div>
-                    <button className={ loginBtn ? "login-btn" : "logout-btn"} onClick={()=>{
+                    <Link to={loginBtn ? "/login" : "/"}><button className={ loginBtn ? "login-btn" : "logout-btn"} onClick={()=>{
                         setLoginBtn(!loginBtn);
 
                     }}>{loginBtn ? "Login" : "Logout"}</button>
+                    </Link>
                 </div>
                 
                 

@@ -6,6 +6,7 @@ const Contact=()=>{
     return(
         <div className="contact">
             <div className="contact-left">
+                
                 <img src={burger}></img>
             </div>
             <form className="contact-right">

@@ -12,6 +12,7 @@ import Contact from "./components/Contact/Contact";
 import Cart from "./components/Cart/Cart";
 import Body from "./components/Body/Body";
 import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
+import Login from "./components/Login/Login";
 
 
 const App=()=>{
@@ -58,9 +59,15 @@ const appRouter=createBrowserRouter([
                 path:"/restaurant/:resId",
                 element:<RestaurantMenu/>
 
+            },
+            {
+                path:"/login",
+                element:<Login/>
             }
         ]
-    }
+    },
+   
+    
     
 ])
 
