@@ -8,7 +8,15 @@ import Accordion from '../Accordion/Accordion';
 
 
 
+
 const AccordionBody = ({cards}) => {
+  console.log(cards);
+
+   const dispatch=useDispatch();
+
+   const handleAddItem=(cards)=>{
+     dispatch(addItem(cards));
+   }
     
    
     
@@ -33,7 +41,7 @@ const AccordionBody = ({cards}) => {
 
         <div className="accordion-body-right">
             <img src={IMG_CDN+imageId} className="accordion-img"></img>
-            <button >ADD</button>
+            <button onClick={()=>handleAddItem(cards)}>ADD</button>
             
 
         </div>

@@ -2,7 +2,8 @@ import React from "react";
 import reactDom from "react-dom/client";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
-import appStore from "./redux/appStore";
+import appStore from "./components/redux/appStore";
+
 
 //components
 import Navbar from "./components/Navbar/Navbar";
@@ -15,12 +16,14 @@ import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
 
 const App=()=>{
     return(
+        <Provider store={appStore}>
        
 
         <>
         <Navbar/>
         <Outlet/>
         </>
+        </Provider>
         
        
        
