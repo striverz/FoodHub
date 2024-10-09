@@ -1,3 +1,129 @@
-.contact{
-    margin-top: 85px;
+/* Overall contact container */
+.contact {
+    margin-top: 85px !important;
+
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7; /* Light background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto; /* Center the section */
+    gap: 30px;
+    height: 80vh;
+    
+}
+
+/* Left side image */
+.contact-left {
+    /* border: solid black 1px; */
+    padding: 20px;
+    width: 420px;
+    
+}
+.contact-left img{
+    width: 100%;
+}
+
+
+
+/* Right side form */
+.contact-right {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+    flex: 1;
+}
+
+/* Form heading */
+.contact-right h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input fields */
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+.contact-right input:focus,
+.contact-right textarea:focus {
+    border-color: var(--green-color); /* Custom green color */
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.2); /* Slight glow effect */
+}
+
+/* Submit button */
+.contact-right button {
+    padding: 12px;
+    background-color: var(--green-color); /* Custom theme color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Hover effect for button */
+.contact-right button:hover {
+    background-color: darkgreen; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact-left {
+        max-width: 100%;
+    }
+
+    .contact-right {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-right input,
+    .contact-right textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-right button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-right h1 {
+        font-size: 20px;
+    }
 }
