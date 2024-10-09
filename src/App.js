@@ -13,6 +13,7 @@ import Cart from "./components/Cart/Cart";
 import Body from "./components/Body/Body";
 import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
 import Login from "./components/Login/Login";
+import Footer from "./components/Footer/Footer";
 
 
 const App=()=>{
@@ -23,6 +24,7 @@ const App=()=>{
         <>
         <Navbar/>
         <Outlet/>
+        <Footer/>
         </>
         </Provider>
         
