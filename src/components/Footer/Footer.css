@@ -2,4 +2,19 @@
     border: solid black 1px;
     margin-top: 50px;
     padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left{
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    width: 4rem;
+}
+
+.footer-right{
+    border: solid black 1px;
 }

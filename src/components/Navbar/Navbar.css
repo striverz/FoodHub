@@ -1,3 +1,4 @@
+/* General Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -6,12 +7,10 @@
     height: 80px;
     position: fixed;
     top: 0;
-   
     z-index: 99;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.08);
     background-color: #fff;
-    
 }
 
 .logo {
@@ -25,6 +24,7 @@
     transform: scale(1.05);
 }
 
+/* Navigation items */
 .nav-items {
     display: flex;
     width: 480px;
@@ -51,36 +51,65 @@
     color: #fff;
 }
 
-.login-btn {
+/* Login/logout button styles */
+.login-btn, .logout-btn {
     padding: 10px 17px;
     border: none;
     border-radius: 9px;
     color: #fff;
-    background-color: var(--green-color);
     cursor: pointer;
     font-weight: 550;
     width: 82px;
+}
+
+.login-btn {
+    background-color: var(--green-color);
 }
 
 .logout-btn {
-    padding: 10px 17px;
-    border: none;
-    border-radius: 9px;
-    color: #fff;
     background-color: var(--orange-color);
-    cursor: pointer;
-    font-weight: 550;
-    width: 82px;
 }
 
-
-
-.login-btn:hover{
+.login-btn:hover, .logout-btn:hover {
     transform: scale(1.01);
 }
 
+/* Burger menu styling */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    border-radius: 10px;    
+}
+
+/* Responsive styles */
 @media (max-width: 650px) {
     .nav-items {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-items.open {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: flex;
     }
 }
