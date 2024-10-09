@@ -6,21 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Accordion from '../Accordion/Accordion';
 
+import { useDispatch } from 'react-redux';
+import { addItem } from '../redux/cartSlice';
+
 
 
 
 const AccordionBody = ({cards}) => {
-  console.log(cards);
 
-   const dispatch=useDispatch();
-
-   const handleAddItem=(cards)=>{
-     dispatch(addItem(cards));
-   }
-    
+  const dispatch=useDispatch();
+  const handleAddItem=(cards)=>{
+    dispatch(addItem(cards));
+  }
+ 
    
-    
-    
     const {name,description,imageId,price,ratings}=cards?.card?.info;
     
 

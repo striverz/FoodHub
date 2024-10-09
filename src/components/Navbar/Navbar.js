@@ -4,8 +4,13 @@ import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import {useState} from "react";
 
+import { useSelector } from "react-redux";
+
 
 const Navbar=()=>{
+
+    const cartItems=useSelector((store)=>store.cart.items);
+   
    
 
     const [loginBtn,setLoginBtn]=useState(true);
@@ -17,7 +22,7 @@ const Navbar=()=>{
                     <Link className="item" to="/">Home</Link>
                     <Link className="item" to="/about">About</Link>
                     <Link className="item" to="/contact">Contact</Link>
-                    <Link className="item" to="/cart">Cart()</Link>
+                    <Link className="item" to="/cart">Cart({cartItems.length})</Link>
                 </div>
 
                 <div>
