@@ -6,6 +6,8 @@ import { IMG_CDN, RESTAURANT_MENU_API } from '../../utils/consts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Accordion from '../Accordion/Accordion';
+import RestaurantCardShimmer from '../RestaurantCardShimmer/RestaurantCardShimmer';
+import RestaurantMenuShimmer from '../RestaurantMenuShimmer/RestaurantMenuShimmer';
 
 const RestaurantMenu = () => {
     const {resId}=useParams();
@@ -32,19 +34,14 @@ const RestaurantMenu = () => {
     },[]);
 
     {
-        if(restaurantMenuData==null) return;
+        if(restaurantMenuData==null) return <RestaurantMenuShimmer/>;
     }
 
     const {name,cloudinaryImageId,cuisines,avgRating,costForTwo,sla}=restaurantMenuData;
 
-   
-    
-    
 
-    
-    
-  
   return (
+    
     <div className="restaurant-menu">
 
         <div className="main-section">

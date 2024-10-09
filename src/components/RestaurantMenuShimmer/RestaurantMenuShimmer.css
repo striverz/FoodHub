@@ -1,0 +1,125 @@
+/* Restaurant Menu Shimmer */
+.restaurant-menu-shimmer {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.shimmer-main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .shimmer-main-section {
+        flex-direction: row;
+    }
+}
+
+.shimmer-main-section-left {
+    width: 100%;
+    max-width: 230px;
+}
+
+.shimmer-img {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 10px;
+    animation: shimmer-move 1.5s infinite linear;
+}
+
+.shimmer-main-section-right {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.shimmer-title {
+    width: 60%;
+    height: 20px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 6px;
+    animation: shimmer-move 1.5s infinite linear;
+}
+
+.shimmer-cuisine {
+    width: 40%;
+    height: 15px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 6px;
+    animation: shimmer-move 1.5s infinite linear;
+}
+
+.shimmer-rating {
+    width: 30%;
+    height: 20px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 6px;
+    animation: shimmer-move 1.5s infinite linear;
+}
+
+/* Accordion Shimmer */
+.accordion-shimmer-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.shimmer-accordion {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #d1d5db;
+    padding: 15px;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 10px;
+    animation: shimmer-move 1.5s infinite linear;
+}
+
+.shimmer-accordion-header {
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    animation: shimmer-move 1.5s infinite linear;
+}
+
+.shimmer-accordion-body {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 6px;
+    animation: shimmer-move 1.5s infinite linear;
+}
+
+/* Shimmer animation */
+@keyframes shimmer-move {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}

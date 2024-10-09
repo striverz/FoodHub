@@ -1,0 +1,81 @@
+/* Container to hold shimmer cards */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 150px;
+}
+
+/* Individual shimmer card */
+.shimmer-card {
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Shimmer effect */
+.shimmer {
+    background: linear-gradient(
+        90deg,
+        #e0e0e0 25%,
+        #f8f8f8 50%,
+        #e0e0e0 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Shimmer for the image placeholder */
+.shimmer-card-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+/* Shimmer for text placeholders */
+.shimmer-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shimmer-title {
+    width: 60%;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.shimmer-cuisines {
+    width: 80%;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.shimmer-rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.shimmer-rating-bar {
+    width: 30%;
+    height: 20px;
+    border-radius: 4px;
+}

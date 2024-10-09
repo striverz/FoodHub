@@ -4,6 +4,7 @@ import {useState,useEffect} from "react";
 import { RESTAURANT_API } from '../../utils/consts';
 import RestaurantCard from '../RestaurantCard/RestaurantCard';
 import { Link } from 'react-router-dom';
+import RestaurantCardShimmer from '../RestaurantCardShimmer/RestaurantCardShimmer';
 
 
 const Body = () => {
@@ -36,14 +37,8 @@ const Body = () => {
         return allRestaurants.filter((restaurant)=>restaurant?.info?.name?.toLowerCase()?.includes(searchText?.toLowerCase()));
     }
 
-  {
-    if(filteredRestaurants==null) {
-        <h1>Loading...</h1>;
-        return;
-
-    } 
-  }
-  return (
+  
+  return (allRestaurants===null ? <RestaurantCardShimmer/> :
     <div className="body">
         <div className="search-bar-section">
             <input 
