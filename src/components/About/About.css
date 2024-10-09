@@ -1,4 +1,60 @@
-.about{
-    border: solid red 1px;
+.about {
     margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.about-me {
+    width: 100%;
+    max-width: 600px; /* Maximum width for the section */
+    border: 1px solid #ddd; /* Subtle border for the container */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px; /* Padding inside the container */
+}
+
+.about-me h1 {
+    font-size: 2.5rem; /* Increased font size for the title */
+    color: #333; /* Dark color for the title */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align the title */
+}
+
+.about-me p {
+    text-align: center;
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #666; /* Softer text color */
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+.profile-img {
+    width: 250px; /* Adjusted size for profile image */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular profile image */
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.social-media {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center social media icons */
+    gap: 20px; /* Spacing between icons */
+}
+
+.social-img {
+    width: 35px; /* Size for social media icons */
+    transition: transform 0.3s; /* Animation for hover effect */
+    border-radius: 7px;
+}
+
+.social-img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
 }
