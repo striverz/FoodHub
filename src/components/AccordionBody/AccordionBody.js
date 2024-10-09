@@ -6,8 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Accordion from '../Accordion/Accordion';
 
+
+
 const AccordionBody = ({cards}) => {
-    console.log(cards?.card?.info);
+    
+   
+    
     
     const {name,description,imageId,price,ratings}=cards?.card?.info;
     
@@ -29,7 +33,7 @@ const AccordionBody = ({cards}) => {
 
         <div className="accordion-body-right">
             <img src={IMG_CDN+imageId} className="accordion-img"></img>
-            <button>ADD</button>
+            <button >ADD</button>
             
 
         </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import reactDom from "react-dom/client";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
+import { Provider } from "react-redux";
+import appStore from "./redux/appStore";
 
 //components
 import Navbar from "./components/Navbar/Navbar";
@@ -10,13 +12,19 @@ import Cart from "./components/Cart/Cart";
 import Body from "./components/Body/Body";
 import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
 
+
 const App=()=>{
     return(
+       
+
         <>
         <Navbar/>
         <Outlet/>
-       
         </>
+        
+       
+       
+        
     )
 }
 
