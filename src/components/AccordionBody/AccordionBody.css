@@ -1,66 +1,74 @@
 .accordion-body {
-    border: none; /* Clean, no solid borders */
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px; /* Spacious padding for a modern look */
-    background-color: #f9f9f9; /* Light background */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border-radius: 8px; /* Rounded corners for a polished look */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-    margin-bottom: 15px; /* Adds space between accordion items */
-}
-
-.accordion-body:hover {
-    background-color: #f1f1f1; /* Light gray on hover for interactivity */
+    flex-wrap: wrap;
+    padding: 4px 10px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-body-left {
-    width: 60%; /* Flexibility to resize based on content */
-    font-family: 'Arial', sans-serif;
-    font-size: 16px; /* Clean and modern font size */
-    line-height: 1.6; /* Better readability */
-    color: #333; /* Dark text for contrast */
-}
-
-.accordion-body-left h1 {
-    font-size: 20px; /* Larger for the title */
-    margin-bottom: 10px;
-    color: #111; /* Darker for better hierarchy */
-}
-
-.accordion-body-left p {
-    font-size: 14px; /* Slightly smaller for descriptions */
-    color: #555; /* Softer color for descriptions */
+    width: 100%;
+    max-width: 520px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .accordion-body-right {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center image and button */
-    padding-left: 10px;
+    align-items: center;
+    width: 100%;
+    max-width: 230px;
+    padding: 4px;
+    
+    /* border: solid red 1px; */
 }
 
-.accordion-body-right img {
-    width: 200px;
-    height: auto; /* Maintain aspect ratio */
+.accordion-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
     object-fit: cover;
-    border-radius: 8px; /* Match overall rounded style */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 10px; /* Space between image and button */
 }
 
 .accordion-body-right button {
-    background-color: #ff5722; /* Swiggy-inspired vibrant button color */
+    padding: 10px 32px;
+    color: #fff;
+    background-color: #f76b1c;
     border: none;
-    color: white;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 4px; /* Slightly rounded button */
+    border-radius: 10px;
+    margin-top: -14px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 900px;
 }
 
 .accordion-body-right button:hover {
-    background-color: #e64a19; /* Darker shade on hover */
+    background-color: #e65a00;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .accordion-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion-body-left {
+        width: 100%;
+    }
+
+    .accordion-body-right {
+        width: 100%;
+        max-width: none;
+        margin-top: 20px;
+    }
 }

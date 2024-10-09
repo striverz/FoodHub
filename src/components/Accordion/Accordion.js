@@ -13,8 +13,9 @@ const Accordion = ({cards}) => {
   return (
     <>
     
-    <div className="accordion" onClick={handleAccordionClick}>
-    {cards?.title}
+    <div className="accordion" onClick={handleAccordionClick} >
+    <h3>{cards?.title}({cards?.itemCards.length})</h3>
+    
  
     </div>
     {accordionClick&1 ? 

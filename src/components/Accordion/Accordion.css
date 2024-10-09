@@ -1,6 +1,23 @@
-.accordion{
-    width: 800px;
-    border: solid black 1px;
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #d1d5db;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    
+    
+}
+
+.accordion:hover {
+    background-color: #ececec;
+}
+
+@media (max-width: 768px) {
+    .accordion {
+        padding: 15px;
+    }
 }
