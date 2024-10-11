@@ -1,0 +1,44 @@
+.error{
+    background-color: solid black 1px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 100vh;
+}
+
+.err-img{
+    /* border: solid black 1px; */
+    width: 500px;
+
+}
+.err-img img{
+   width: 100%;
+}
+.error p{
+    font-size: 20px;
+    color: #606060;
+    font-weight: 600;
+}
+.error-btn button{
+    padding: 10px 12px;
+    border: none;
+    background-color: var(--orange-color);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+    .err-img{
+        /* border: solid black 1px; */
+        width: 350px;
+    
+    }
+    .err-img img{
+       width: 100%;
+    }
+
+}

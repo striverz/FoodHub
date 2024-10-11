@@ -6,11 +6,18 @@ import logo from "../../assets/logo.png";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import useOnlineStatus from "../../hooks/useOnlineStatus/useOnlineStatus";
+
+
+
 
 const Navbar = () => {
     const cartItems = useSelector((store) => store.cart.items);
     const [loginBtn, setLoginBtn] = useState(true);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for burger menu
+   
+ 
+    
 
     return (
         <div className="navbar">
@@ -26,6 +33,7 @@ const Navbar = () => {
                     <Link className="item" to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
                     <Link className="item" to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
                     <Link className="item iteem" to="/cart" onClick={() => setIsMobileMenuOpen(false)}>
+                   
                     <FontAwesomeIcon icon={faShoppingCart} className="item-c" />
                         ({cartItems.length})
                     </Link>

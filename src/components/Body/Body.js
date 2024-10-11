@@ -5,10 +5,14 @@ import RestaurantCard from '../RestaurantCard/RestaurantCard';
 import { Link } from 'react-router-dom';
 import RestaurantCardShimmer from '../RestaurantCardShimmer/RestaurantCardShimmer';
 
+
+
+
 const Body = () => {
     const [allRestaurants, setAllRestaurants] = useState(null);
     const [filteredRestaurants, setFilteredRestaurants] = useState(null);
     const [searchText, setSearchText] = useState("");
+    
 
     async function getRestaurantData() {
         try {
@@ -17,7 +21,8 @@ const Body = () => {
             const json = await data.json();
             
             // Inspect the JSON data structure here
-            console.log(json);
+            
+            
 
             // Adjust the path to get a larger number of restaurants
             const cards = json?.data?.cards || [];
@@ -26,6 +31,8 @@ const Body = () => {
             // Iterate through the cards and collect restaurants from multiple sections
             cards.forEach(card => {
                 const restaurantData = card?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+                
+                
                 if (restaurantData) {
                     restaurants = [...restaurants, ...restaurantData]; // Add all restaurant data found
                 }
@@ -69,9 +76,12 @@ const Body = () => {
                     Search
                 </button>
             </div>
+           
+            
+            
             <div className="restaurant-container">
-                {filteredRestaurants.map((restaurant) => (
-                    <Link to={"restaurant/" + restaurant?.info?.id} key={restaurant?.info?.id} className="restaurant-menu-loader">
+                {filteredRestaurants.map((restaurant,ind) => (
+                    <Link to={"restaurant/" + restaurant?.info?.id} key={ind} className="restaurant-menu-loader">
                         <RestaurantCard card={restaurant.info} />
                     </Link>
                 ))}

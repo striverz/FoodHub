@@ -7,9 +7,12 @@ import twitter from "../../assets/twitter.png"
 import email from "../../assets/gmail.png"
 import github from "../../assets/github.png"
 
+
+
 const About=()=>{
     return(
         <div className="about">
+            
             <div className="about-me">
             <h1>ABOUT ME</h1>
             <img src={profile} className="profile-img"></img>
