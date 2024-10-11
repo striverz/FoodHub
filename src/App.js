@@ -14,7 +14,6 @@ import Body from "./components/Body/Body";
 import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
 import Login from "./components/Login/Login";
 import Footer from "./components/Footer/Footer";
-import Carousel from "./components/Carousel/Carousel";
 import Error from "./components/Error/Error";
 
 
