@@ -18,25 +18,25 @@
 To get started with FoodHub, follow these steps:
 
 - Clone the repository:
-```
+```bash
 git clone https://github.com/striverz/FoodHub.git
 ```
 
 - Navigate to the project directory:
-```
+```bash
 cd FoodHub
 ```
 
 - Install the necessary dependencies:
-```
+```bash
 npm install
 ```
 - Start the development server:
-```
+```bash
 npm start
 ```
 
-## Contribution
+## Contribution🚀
 We welcome contributions from the community! To contribute to FoodHub, please follow these steps:
 
 - Fork the repository.
