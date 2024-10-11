@@ -4,6 +4,9 @@ import { useSelector } from "react-redux";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 const Navbar = () => {
     const cartItems = useSelector((store) => store.cart.items);
     const [loginBtn, setLoginBtn] = useState(true);
@@ -22,8 +25,9 @@ const Navbar = () => {
                     <Link className="item" to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
                     <Link className="item" to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
                     <Link className="item" to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
-                    <Link className="item" to="/cart" onClick={() => setIsMobileMenuOpen(false)}>
-                        Cart({cartItems.length})
+                    <Link className="item iteem" to="/cart" onClick={() => setIsMobileMenuOpen(false)}>
+                    <FontAwesomeIcon icon={faShoppingCart} className="item-c" />
+                        ({cartItems.length})
                     </Link>
                 </div>
                 <div>

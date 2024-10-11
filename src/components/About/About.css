@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 20px;
     background-color: #f4f4f4; /* Light background color */
+    height: 90vh;
 }
 
 .about-me {
@@ -58,3 +59,5 @@
 .social-img:hover {
     transform: scale(1.1); /* Scale effect on hover */
 }
+
+

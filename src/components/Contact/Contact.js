@@ -11,9 +11,9 @@ const Contact=()=>{
             </div>
             <form className="contact-right">
                 <h1>Contact US</h1>
-                <input type="text" required></input>
-                <input type="email" required></input>
-                <textarea id="description" name="description" rows="4" placeholder="Enter the description">
+                <input type="text" placeholder="enter your name"required></input>
+                <input type="email" required placeholder="enter your email"></input>
+                <textarea id="description" name="description" rows="4" placeholder="description">
                 </textarea>
                 <button>Submit</button>
 

@@ -11,6 +11,7 @@ import flag from "../../assets/flag.png"
 const Footer = () => {
   return (
     <div className="footer">
+     
         
        <div className="footer-left">
          
@@ -53,6 +54,8 @@ const Footer = () => {
          </div>
           
        </div>
+       <hr className="footer-divider" />
+       <p className="footer-last">Copyright © 2024 FoodHub | All rights reserved</p>
        
     </div>
   )

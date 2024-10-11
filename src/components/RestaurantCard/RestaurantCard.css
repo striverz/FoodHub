@@ -2,7 +2,7 @@
     
     width: 250px;
     margin: 15px;
-    padding: 10px 10px; /* Increased padding for better spacing */
+    padding: 4px 10px 10px 10px; /* Increased padding for better spacing */
     display: flex;
     flex-direction: column;
     border-radius: 10px; /* Rounded corners */
@@ -10,8 +10,10 @@
     background-color: #fff; /* White background */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* Subtle shadow */
     cursor: pointer;
-    justify-content: space-around;
+    
     height: 300px;
+    justify-content: space-around;
+    /* gap: 10px; */
     
 }
 
@@ -41,13 +43,14 @@
 }
 .cuisines {
     margin-top: 3px;
-    font-size: 13px; /* Smaller font size for cuisines */
+    font-size: 12px; /* Smaller font size for cuisines */
     color: #4d4c4c; /* Grey color for less emphasis */
     margin: 0px 0; /* Space above and below */
+    font-weight: 400;
 }
 
 .rating {
-    margin-top: 14px;
+    margin-top: -4px;
     display: flex;
     justify-content: space-between;
     align-items: center;

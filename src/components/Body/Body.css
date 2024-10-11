@@ -1,9 +1,9 @@
 /* Body styling */
 .body {
-    margin-top: 100px;
+    margin-top: 82px;
     padding: 10px;
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Light background for contrast */
+    /* background-color: #f9f9f9;  */
 }
 
 /* Search Bar Section */
@@ -24,7 +24,7 @@
     border-top: 1px solid rgb(49, 48, 48);
     border-bottom: 1px solid rgb(47, 46, 46);
     border-right:none;
-    border-radius: 6px 0 0 6px; /* Rounded left edges */
+    border-radius: 6px 2px 2px 6px; /* Rounded left edges */
     outline: none;
     font-size: 16px; /* Increased font size for better readability */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -69,6 +69,9 @@
 @media(max-width:650px){
     .search-bar-section{
         margin-top: 80px;
+    }
+    .body{
+        margin-top: 100px;
     }
 }
 
