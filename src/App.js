@@ -16,22 +16,16 @@ import Login from "./components/Login/Login";
 import Footer from "./components/Footer/Footer";
 import Error from "./components/Error/Error";
 
-
 const App=()=>{
     return(
         <Provider store={appStore}>
-       
-
         <>
         <Navbar/>
         <Outlet/>
         <Footer/>
         </>
         </Provider>
-        
-       
-       
-        
+    
     )
 }
 
