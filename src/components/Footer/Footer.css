@@ -1,20 +1,138 @@
 .footer{
-    border: solid black 1px;
-    margin-top: 50px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
+    /* border: solid black 1px; */
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-around;
+   background-color: #fff;
+   color: #000;
+   padding: 5px 0px 4px 0px;
+   flex-wrap: wrap;
+   align-items: center;
 }
-
 .footer-left{
-    border: solid black 1px;
+   
+    width: 280px;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
+    gap: 3px;
+    /* border: solid black 1px; */
     align-items: center;
 }
-.footer-logo{
-    width: 4rem;
+.footer-left >h2{
+    color: var(--orange-color);
+    
+}
+.footer-left p{
+    color: #606060;
+    font-size: 14px;
+}
+
+
+.footer-middle1{
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* border: solid black 1px; */
+}
+.footer-middle1 >h2{
+    color: var(--orange-color);
+}
+.footer-sub{
+    text-decoration: none;
+    color: #606060;
+}
+.footer-middle1 >p{
+    color: #606060;
+}
+.footer-middle1 p:hover{
+    color: var(--orange-color);
+}
+
+.footer-middle2{
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: solid black 1px; */
+    align-items: center;
+}
+.footer-middle2 h2{
+    color: var(--orange-color);
+}
+.social-img1{
+    width: 1.9rem;
+    height: 1.9rem;
+    
 }
 
 .footer-right{
-    border: solid black 1px;
+    /* border: solid black 1px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-u{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    padding: 2px;
+}
+.right-u button{
+    padding: 6px 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    color:#606060;
+    border: none;
+    border: solid rgb(41, 39, 39) 1px;
+    cursor: pointer;
+    
+}
+.flag{
+    width: 1rem;
+    border-radius: 2px;
+}
+.flag-btn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.right-l{
+    display: flex;
+    gap: 10px;
+
+}
+.right-l input{
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: solid rgb(48, 43, 43) 1px;
+}
+.right-l button{
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--orange-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media(max-width:700px){
+    .footer-middle1{
+        display: none;
+    }
 }
